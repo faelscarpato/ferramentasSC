@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impostos</title>
+    <link rel="stylesheet" href="calculadora-impostos.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Calculadora de Impostos</h1>
+
+    <div class="calculadora-container">
+        <div class="tipo-calculo">
+            <label for="tipo">Selecione o Imposto:</label>
+            <select id="tipo">
+                <option value="ir">Imposto de Renda (IRPF)</option>
+                <option value="inss">INSS</option>
+                <option value="iss">ISS (Imposto Sobre Serviços)</option>
+                <!-- Adicione mais opções de impostos aqui -->
+            </select>
+        </div>
+
+        <div id="form-ir" class="imposto-form">
+            <h2>Imposto de Renda (IRPF)</h2>
+            <label for="salario-bruto-ir">Salário Bruto (R$):</label>
+            <input type="number" id="salario-bruto-ir" placeholder="Digite o salário bruto">
+            <label for="dependentes-ir">Número de Dependentes:</label>
+            <input type="number" id="dependentes-ir" placeholder="0" value="0">
+             <label for="outras-deducoes-ir">Outras Deduções (R$):</label>
+            <input type="number" id="outras-deducoes-ir" placeholder="Outras deduções">
+            <button onclick="calcularIRPF()">Calcular IR</button>
+            <div class="resultado" id="resultado-ir"></div>
+        </div>
+    
+       <div id="form-inss" class="imposto-form" style="display:none">
+            <h2>INSS</h2>
+            <label for="salario-bruto-inss">Salário Bruto (R$):</label>
+            <input type="number" id="salario-bruto-inss" placeholder="Digite o salário bruto">
+            <button onclick="calcularINSS()">Calcular INSS</button>
+            <div class="resultado" id="resultado-inss"></div>
+        </div>
+
+        <div id="form-iss" class="imposto-form" style="display:none">
+            <h2>ISS - Imposto Sobre Serviços</h2>
+            <div>
+                <label for="receita-bruta">Receita Bruta (R$):</label>
+                <input type="number" id="receita-bruta" placeholder="Digite a receita bruta">
+            </div>
+            <div>
+                <label for="aliquota-iss">Alíquota do ISS (%):</label>
+                <input type="number" id="aliquota-iss" placeholder="Digite a alíquota do ISS">
+            </div>
+            <button onclick="calcularISS()">Calcular ISS</button>
+            <div class="resultado" id="resultado-iss"></div>
+        </div>
+
+    </div>
+
+    <script src="calculadora-impostos.js"></script>
+</body>
+</html>

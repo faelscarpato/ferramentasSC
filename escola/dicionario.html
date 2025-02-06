@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário Online</title>
+    <link rel="stylesheet" href="dicionario.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+   <nav class="navbar">
+    <div class="container">
+        <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+        <ul class="nav-menu">
+      <li><a href="../index.html">Home</a></li>
+     </ul>
+     <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </div>
+    </div>
+   </nav>
+   </header>
+    <h1>Dicionário Online</h1>
+
+    <div class="dicionario-container">
+        <div class="input-area">
+            <label for="termo">Digite a palavra ou expressão:</label>
+            <input type="text" id="termo" placeholder="Ex: amor, saudade, etc.">
+            <button onclick="buscarSignificado()">Buscar</button>
+        </div>
+
+        <div class="resultado-area">
+            <h2>Significado:</h2>
+            <div id="significado">
+                <!-- Significado será exibido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="dicionario.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Nomes Aleatórios</title>
+    <link rel="stylesheet" href="gerador-nomes.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+  <header>
+ <nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+    <ul class="nav-menu">
+    <li><a href="../index.html">Home</a></li>
+
+   </ul>
+   <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+   </div>
+  </div>
+ </nav>
+
+        <h1>Gerador de Nomes Aleatórios</h1>
+        <p>Encontre nomes criativos para seus personagens, empresas ou projetos!</p>
+    </header>
+
+    <main class="gerador-container">
+        <section class="form-container">
+            <h2>Opções de Geração</h2>
+
+            <div class="form-group">
+                <label for="tipo">Tipo de Nome:</label>
+                <select id="tipo" aria-label="Selecione o tipo de nome a ser gerado">
+                    <option value="personagem">Personagem</option>
+                    <option value="empresa">Empresa</option>
+                    <option value="projeto">Projeto</option>
+                    <option value="lugar">Lugar</option>
+                    <option value="animal">Animal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade">Quantidade de Nomes:</label>
+                <input type="number" id="quantidade" value="1" min="1" max="10" aria-label="Digite a quantidade de nomes a serem gerados (máximo 10)">
+            </div>
+
+            <div class="form-group">
+                <label for="nome-base">Nome Base:</label>
+                <input type="text" id="nome-base" placeholder="Digite um nome base" aria-label="Digite um nome base para gerar nomes relacionados">
+            </div>
+
+            <div class="botoes">
+                <button onclick="gerarNomes()" aria-label="Gerar nomes aleatórios">Gerar Nomes Aleatórios</button>
+                <button onclick="gerarNomesComBase()" aria-label="Gerar nomes com base no nome digitado">Gerar Nomes com Base</button>
+            </div>
+        </section>
+
+        <!--<section class="adicionar-nome-container">
+            <h2>Adicionar Novo Nome</h2>
+            <div class="form-group">
+                <label for="novo-nome">Novo Nome:</label>
+                <input type="text" id="novo-nome" placeholder="Digite um nome" aria-label="Digite um novo nome para adicionar">
+            </div>
+            <div class="form-group">
+                <label for="novo-tipo">Tipo:</label>
+                <select id="novo-tipo" aria-label="Selecione o tipo do novo nome">
+                    <option value="personagem">Personagem</option>
+                    <option value="empresa">Empresa</option>
+                    <option value="projeto">Projeto</option>
+                    <option value="lugar">Lugar</option>
+                    <option value="animal">Animal</option>
+                </select>
+            </div>
+            <div class="botoes">
+                <button type="button" onclick="adicionarNome()" aria-label="Adicionar o nome à lista">Adicionar Nome</button>
+            </div>
+        </section>-->
+
+        <section class="resultado">
+            <h2>Nomes Gerados:</h2>
+            <ul id="lista-nomes" aria-live="polite">
+                <!--Nomes gerados aqui-->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gerador de Nomes Criativos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="gerador-nomes.js"></script>
+</body>
+</html>

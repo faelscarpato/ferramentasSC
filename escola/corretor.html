@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corretor Ortográfico</title>
+    <link rel="stylesheet" href="corretor.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+</head>
+<body>
+   <nav class="navbar">
+    <div class="container">
+        <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+        <ul class="nav-menu">
+      <li><a href="../index.html">Home</a></li>
+     </ul>
+     <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </div>
+    </div>
+   </nav>
+   </header>
+    <h1>Corretor Ortográfico</h1>
+    <div class="corretor-container">
+        <div class="input-area">
+            <label for="texto">Digite ou cole o texto:</label>
+            <textarea id="texto" placeholder="Digite o texto aqui..."></textarea>
+        </div>
+
+        <div class="botoes">
+            <button onclick="corrigirTexto()">Corrigir Texto</button>
+        </div>
+
+        <div class="resultado-area">
+            <h2>Texto Corrigido:</h2>
+            <textarea id="textoCorrigido" readonly placeholder="O texto corrigido aparecerá aqui..."></textarea>
+        </div>
+    </div>
+    <script src="corretor.js"></script>
+</body>
+</html>

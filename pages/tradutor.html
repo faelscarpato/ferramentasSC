@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor de Idiomas</title>
+    <link rel="stylesheet" href="tradutor.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Tradutor de Idiomas</h1>
+
+    <div class="tradutor-container">
+        <div class="idiomas">
+            <div class="idioma-origem">
+                <label for="idioma-origem">Idioma de Origem:</label>
+                <select id="idioma-origem">
+                    <!-- As opções serão carregadas via JavaScript -->
+                </select>
+            </div>
+
+            <div class="idioma-destino">
+                <label for="idioma-destino">Idioma de Destino:</label>
+                <select id="idioma-destino">
+                      <!-- As opções serão carregadas via JavaScript -->
+                </select>
+            </div>
+        </div>
+
+        <div class="textos">
+            <div class="texto-origem">
+                <label for="texto-original">Texto a Traduzir:</label>
+                <textarea id="texto-original" placeholder="Digite o texto aqui..."></textarea>
+            </div>
+            <div class="texto-traduzido">
+               <label for="texto-traduzido">Tradução:</label>
+                <textarea id="texto-traduzido" readonly></textarea>
+            </div>
+        </div>
+         <div class="botoes">
+                <button onclick="traduzirTexto()">Traduzir</button>
+                <button onclick="limparCampos()">Limpar</button> <!-- Botão Limpar -->
+        </div>
+    </div>
+
+    <script src="tradutor.js"></script>
+</body>
+</html>

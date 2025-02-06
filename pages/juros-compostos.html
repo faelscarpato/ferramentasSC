@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="juros-compostos.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Calculadora de Juros Compostos</h1>
+
+    <div class="calculadora-container">
+        <div class="input-group">
+            <label for="capital-inicial">Capital Inicial (R$):</label>
+            <input type="number" id="capital-inicial" value="1000">
+        </div>
+
+        <div class="input-group">
+            <label for="taxa-juros">Taxa de Juros (% a.m.):</label>
+            <input type="number" id="taxa-juros" value="1">
+        </div>
+
+        <div class="input-group">
+            <label for="tempo">Tempo (meses):</label>
+            <input type="number" id="tempo" value="12">
+        </div>
+
+        <div class="input-group">
+            <label for="aporte-mensal">Aporte Mensal (R$):</label>
+            <input type="number" id="aporte-mensal" value="100">
+            <span class="opcional">(Opcional)</span>
+        </div>
+        
+        <button onclick="calcularJurosCompostos()">Calcular</button>
+
+        <div class="resultado">
+            <h2>Resultado:</h2>
+            <p>Montante Final: <span id="montante-final"></span></p>
+            <p>Total Investido: <span id="total-investido"></span></p>
+            <p>Juros Totais: <span id="juros-totais"></span></p>
+        </div>
+
+        <div class="grafico">
+            <h2>Evolução do Investimento</h2>
+            <canvas id="grafico-juros"></canvas> <!-- Usaremos Chart.js aqui -->
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Inclui Chart.js -->
+    <script src="juros-compostos.js"></script>
+</body>
+</html>

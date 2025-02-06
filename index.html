@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas Úteis</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="container">
+            <a href="#" class="logo"><img src="logo.svg" alt="logo"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+              <li><a href="#">Dia a Dia</a></li>
+              <li><a href="#">Estudantes</a></li>
+              <li><a href="#">Profissionais</a></li>
+              <li><a href="#">Saúde</a></li>
+              <li><a href="#">Lazer</a></li>
+              <li><a href="#">Outras</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <main>
+        <section id="dia-a-dia">
+            <h2>Ferramentas para o Dia a Dia</h2>
+            <div class="ferramenta-container">
+                <!--  Aqui vamos inserir cada ferramenta (ex: Conversor de Medidas)  -->
+                <div class="ferramenta">
+                    <h3>Conversor de Medidas</h3>
+                    <!-- Conteúdo do conversor (inputs, botões, etc.) -->
+                    <p>Converta unidades de comprimento, peso, volume, etc.</p>
+                    <button onclick="abrirFerramenta('pages/conversor-medidas')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Calculadora de Juros Compostos</h3>
+                   <p>Simule investimentos e veja o poder dos juros compostos.</p>
+                    <button onclick="abrirFerramenta('pages/juros-compostos')">Abrir</button>
+                </div>
+
+               <div class="ferramenta">
+                    <h3>Gerador de Senhas</h3>
+                    <p>Crie senhas fortes para suas contas online.</p>
+                    <button onclick="abrirFerramenta('pages/gerador-senhas')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Verificador de CEP</h3>
+                    <p>Encontrar informações do endereço.</p>
+                    <button onclick="abrirFerramenta('pages/verificador-cep')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Tradutor de Idiomas</h3>
+                    <p>Traduza textos e frases para diversos idiomas.</p>
+                    <button onclick="abrirFerramenta('pages/tradutor')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Cronômetro e Temporizador</h3>
+                    <p>Controle o tempo com precisão.</p>
+                    <button onclick="abrirFerramenta('pages/cronometro')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Calendário Online</h3>
+                    <p>Visualize e organize seus compromissos.</p>
+                    <button onclick="abrirFerramenta('pages/calendario')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Bloco de Notas Online</h3>
+                    <p>Anote suas ideias.</p>
+                    <button onclick="abrirFerramenta('pages/bloco-notas')">Abrir</button>
+                </div>
+          </div>
+        </section>
+
+        <section id="estudantes">
+            <h2>Ferramentas para Estudos</h2>
+            <div class="ferramenta-container">
+
+                <div class="ferramenta">
+                        <h3>Calculadora de Média Ponderada</h3>
+                        <p>Calcule sua média escolar.</p>
+                        <button onclick="abrirFerramenta('escola/media-ponderada')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Conversor de Números Romanos</h3>
+                        <p>Converta números decimais para algarismos romanos.</p>
+                        <button onclick="abrirFerramenta('escola/conversor-romanos')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Gerador de Fórmulas Matemáticas</h3>
+                        <p>Encontre fórmulas matemáticas para diversas áreas.</p>
+                        <button onclick="abrirFerramenta('escola/formulas-matematicas')">Abrir</button>
+                </div>
+
+                 <div class="ferramenta">
+                        <h3>Dicionário Online</h3>
+                        <p>Consulte o significado de palavras.</p>
+                        <button onclick="abrirFerramenta('escola/dicionario')">Abrir</button> <!-- Corrigido -->
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Corretor Ortográfico</h3>
+                        <p>Revise seus textos.</p>
+                        <button onclick="abrirFerramenta('escola/corretor')">Abrir</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="profissionais">
+            <h2>Ferramentas para Profissionais</h2>
+            <div class="ferramenta-container">
+                <!-- Ferramentas Existentes (Mantidas) -->
+                <div class="ferramenta">
+                    <h3>Calculadora de Impostos</h3>
+                    <p>Calcule o valor de impostos (genérico).</p>
+                    <button onclick="abrirFerramenta('profissionais/calculadora-impostos')">Abrir</button>
+                </div>
+                <div class="ferramenta">
+                    <h3>Gerador de Contratos</h3>
+                    <p>Crie contratos personalizados.</p>
+                    <button onclick="abrirFerramenta('profissionais/gerador-contratos')">Abrir</button>
+                </div>
+                <div class="ferramenta">
+                    <h3>Calculadora de Frete</h3>
+                    <p>Calcule o valor do frete.</p>
+                    <button onclick="abrirFerramenta('profissionais/calculadora-frete')">Abrir</button>
+                </div>
+
+                <!--  NOVAS Ferramentas para Área de Trabalho -->
+                <div class="ferramenta">
+                    <h3>Gerador de Currículo para Impressão</h3>
+                    <p>Crie currículos profissionais, formatados para impressão.</p>
+                    <button onclick="abrirFerramenta('profissionais/editor-curriculo')">Abrir</button>
+                </div>
+
+                
+
+            
+            </div>
+        </section>
+
+        <section id="saude">
+            <h2>Ferramentas para Saúde e Bem-Estar</h2>
+            <div class="ferramenta-container">
+
+                <div class="ferramenta">
+                        <h3>Calculadora de IMC</h3>
+                        <p>Calcule seu IMC.</p>
+                        <button onclick="abrirFerramenta('saude/calculadora-imc')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Calculadora de Gasto Calórico</h3>
+                        <p>Calcule quantas calorias você gasta.</p>
+                        <button onclick="abrirFerramenta('saude/calculadora-gasto-calorico')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Gerador de Dicas de Saúde</h3>
+                        <p>Receba dicas personalizadas.</p>
+                        <button onclick="abrirFerramenta('saude/dicas-saude')">Abrir</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="lazer">
+            <h2>Ferramentas para Lazer</h2>
+            <div class="ferramenta-container">
+
+                <div class="ferramenta">
+                        <h3>Gerador de Nomes Aleatórios</h3>
+                        <p>Encontre nomes.</p>
+                        <button onclick="abrirFerramenta('lazer/gerador-nomes')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Criador de Jogos de Palavras</h3>
+                        <p>Divirta-se com jogos de palavras.</p>
+                        <button onclick="abrirFerramenta('lazer/criador-jogos-palavras')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Gerador de Citações Inspiradoras</h3>
+                        <p>Frases inspiradoras.</p>
+                        <button onclick="abrirFerramenta('lazer/gerador-citacoes')">Abrir</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="outras">
+            <h2>Outras Ferramentas</h2>
+            <div class="ferramenta-container">
+
+                <div class="ferramenta">
+                        <h3>Encurtador de Links</h3>
+                        <p>Encurte URLs longas.</p>
+                        <button onclick="abrirFerramenta('outros/encurtador-links')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Leitor de Código de Barras</h3>
+                        <p>Decodifique informações.</p>
+                        <button onclick="abrirFerramenta('outros/leitor-codigo-barras')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                        <h3>Verificador de IP</h3>
+                        <p>Descubra informações.</p>
+                        <button onclick="abrirFerramenta('outros/verificador-ip')">Abrir</button>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>Gerar QR Code</h3>
+                    <p>Descubra informações.</p>
+                    <button onclick="abrirFerramenta('outros/qrcode')">Abrir</button>
+            </div>
+
+            <div class="ferramenta">
+                <h3>Velocidade de Conexão</h3>
+                <p>Descubra informações.</p>
+                <button onclick="abrirFerramenta('outros/velocidade-conexao')">Abrir</button>
+        </div>
+            </div>
+        </section>
+        
+    </main>
+    <div id="voltarTopo"><img src="Topo.png" alt="Voltar ao Topo" onclick="voltarTopo()" class="Topo"></div>
+
+        <footer>
+            <p>&copy; 2023 - Seu Nome/Empresa</p>
+        </footer>
+        
+        <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+    </body>
+    </html>

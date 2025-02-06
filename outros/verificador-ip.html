@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de IP</title>
+    <link rel="stylesheet" href="verificador-ip.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+        <h1>Verificador de IP</h1>
+        <p>Descubra informações sobre um endereço IP.</p>
+    </header>
+
+    <main class="container">
+        <section id="verificacao">
+            <h2>Verificar IP</h2>
+            <div class="form-group">
+                <label for="ip-address">Endereço IP:</label>
+                <input type="text" id="ip-address" placeholder="Digite o endereço IP">
+            </div>
+            <button onclick="verificarIP()">Verificar</button>
+        </section>
+
+        <section id="resultado" style="display: none;">
+            <h2>Informações do IP</h2>
+            <div id="info-ip">
+                <p>IP: <span id="ip"></span></p>
+               Informações sobre o IP:
+                <ul id="ip-details">
+                <li>Localização: <span id="location"></span></li>
+                <li>Organização: <span id="org"></span></li>
+                <li>Região:   <span id="region"></span></li>
+</ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Verificador de IP</p>
+    </footer>
+
+    <script src="verificador-ip.js"></script>
+</body>
+</html>

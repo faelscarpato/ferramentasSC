@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QRCode</title>
+    <link rel="stylesheet" href="qrcode.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+        <h1>Gerador de QRCode</h1>
+        <p>Insira um texto ou URL abaixo para gerar um QRCode.</p>
+    </header>
+
+    <main class="container">
+        <section id="gerador">
+            <h2>Gerar QRCode</h2>
+            <div class="form-group">
+                <label for="texto">Texto/URL:</label>
+                <input type="text" id="texto" placeholder="Digite aqui...">
+            </div>
+            <button onclick="gerarQRCode()">Gerar QRCode</button>
+        </section>
+
+        <section id="qrcode" style="display: none;">
+            <h2>QRCode Gerado:</h2>
+            <div id="qrcode-container">
+                <!-- QRCode será exibido aqui -->
+            </div><br>
+            <button id="baixar-qrcode" onclick="baixarQRCode()">Baixar QRCode</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gerador de QRCode</p>
+    </footer>
+
+    <script src="qrcode.js"></script>
+</body>
+
+</html>

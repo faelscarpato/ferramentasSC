@@ -1,0 +1,107 @@
+/* gerador-formulas.css */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gerador-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.opcoes {
+    margin-bottom: 20px;
+}
+
+.opcoes label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    appearance: none; /* Remove estilos padrão do sistema */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 24 24" fill="%23333" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px;
+}
+.botoes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4db6ac; /* Teal lighten-2 */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+button:hover {
+     background-color: #009688; /* Teal-500 */
+}
+
+/* Estilo para o resultado (textarea) */
+.resultado {
+    margin-bottom: 20px;
+}
+
+.resultado label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 100px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+    box-sizing: border-box; /* Importante: inclui padding e borda na largura/altura */
+    font-size: 1.1em;
+    font-family: monospace; /* Estilo monospace para melhor visualização das fórmulas */
+}
+
+/* Estilos para a lista de notas */
+.lista-formulas h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lista-formulas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-formulas li {
+    display: block;
+   }
+
+.lista-formulas li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Velocidade de Conexão</title>
+  <link rel="stylesheet" href="velocidade-conexao.css">
+  <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+     <div class="container">
+      <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+      <ul class="nav-menu">
+       <li><a href="../index.html">Home</a></li>
+      </ul>
+      <div class="hamburger">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+      </div>
+     </div>
+    </nav>
+    <h1>Teste de Velocidade de Conexão</h1>
+    <p>Verifique a velocidade de download e upload da sua internet.</p>
+  </header>
+
+  <main class="container">
+    <section id="teste">
+      <h2>Iniciar Teste</h2>
+      <button id="start-test" onclick="startTest()">Iniciar Teste</button>
+    </section>
+
+    <section id="resultados" style="display: none;">
+      <h2>Resultados</h2>
+      <p>Velocidade de Download: <span id="download-speed"></span> Mbps</p>
+      <p>Velocidade de Upload: <span id="upload-speed"></span> Mbps</p>
+      <button id="restart-test" onclick="restartTest()">Reinicar Teste</button>
+    </section>
+
+    <section id="status">
+        <!-- Mensagens de status do teste -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Teste de Velocidade de Conexão</p>
+  </footer>
+
+  <script src="velocidade-conexao.js"></script>
+</body>
+</html>

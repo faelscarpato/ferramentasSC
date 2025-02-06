@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Fórmulas Matemáticas</title>
+    <link rel="stylesheet" href="gerador-formulas.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+    <script>
+        MathJax = {
+          tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+          svg: {
+            fontCache: 'global'
+          }
+        };
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+      </script>
+</head>
+<body>
+ <header>
+   <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+      <ul class="nav-menu">
+      <li><a href="../index.html">Home</a></li>
+     </ul>
+     <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </div>
+    </div>
+   </nav>
+   </header>
+    <h1>Gerador de Fórmulas Matemáticas</h1>
+
+    <div class="gerador-container">
+        <div class="opcoes">
+            <label for="area">Selecione a Área da Matemática:</label>
+            <select id="area">
+                <option value="algebra">Álgebra</option>
+                <option value="geometria">Geometria</option>
+                <option value="trigonometria">Trigonometria</option>
+                <option value="calculo">Cálculo</option>
+                <option value="estatistica">Estatística</option>
+            </select>
+        </div>
+
+        <div class="botoes">
+            <button onclick="gerarFormula()">Gerar Fórmula</button>
+        </div>
+
+        <div class="resultado">
+            <label for="formula">Fórmula:</label>
+            <textarea id="formula" readonly placeholder="A fórmula gerada aparecerá aqui..."></textarea>
+        </div>
+          <div class="lista-formulas">
+            <h2>Lista de Fórmulas (da área selecionada)</h2>
+            <ul id="formulaList">
+                <!-- Lista de fórmulas será exibida aqui -->
+            </ul>
+         </div>
+    </div>
+
+    <script src="gerador-formulas.js"></script>
+</body>
+</html>

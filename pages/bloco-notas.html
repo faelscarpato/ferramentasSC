@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas Online</title>
+    <link rel="stylesheet" href="bloco-notas.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Bloco de Notas Online</h1>
+
+    <div class="bloco-notas-container">
+        <div class="toolbar">
+            <button id="newNote">Nova Nota</button>
+             <button id="saveNote">Salvar Nota</button> 
+            <button id="deleteNote">Excluir Nota</button>
+        </div>
+
+        <textarea id="noteText" placeholder="Escreva sua nota aqui..."></textarea>
+         <div class="lista-notas">
+            <h2>Minhas Notas</h2>
+            <ul id="noteList">
+                <!-- Notas salvas serão exibidas aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="bloco-notas.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Dicas de Saúde</title>
+    <link rel="stylesheet" href="gerador-dicas-saude.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Gerador de Dicas de Saúde</h1>
+
+    <div class="gerador-container">
+        <div class="form-group">
+            <label for="objetivo">Qual seu principal objetivo de saúde?</label>
+            <select id="objetivo">
+                <option value="geral">Bem-estar Geral</option>
+                <option value="emagrecimento">Emagrecimento</option>
+                <option value="ganho-massa">Ganho de Massa Muscular</option>
+                <option value="melhorar-sono">Melhorar o Sono</option>
+                <option value="reduzir-stress">Reduzir o Estresse</option>
+            </select>
+        </div>
+
+        <div class="botoes">
+            <button onclick="gerarDica()">Gerar Dica</button>
+        </div>
+
+        <div class="resultado">
+            <h2>Dica de Saúde:</h2>
+            <p id="dica-saude"></p>
+        </div>
+    </div>
+
+    <script src="gerador-dicas-saude.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Online</title>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Calendário Online</h1>
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="currentMonth"></h2>
+            <button id="nextMonth">&gt;</button>
+        </div>
+
+        <div id="calendar-body">
+            <!-- Os dias do calendário serão gerados aqui -->
+        </div>
+
+        <div class="appointment-form">
+            <h2>Adicionar Compromisso</h2>
+            <input type="date" id="appointmentDate">
+            <input type="text" id="appointmentTitle" placeholder="Título do compromisso">
+            <button id="addAppointment">Adicionar</button>
+        </div>
+
+        <div class="appointments">
+            <h2>Compromissos</h2>
+            <ul id="appointmentList">
+                <!-- A lista de compromissos será exibida aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="calendario.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* gerador-contratos.css */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gerador-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.tipo-contrato {
+    margin-bottom: 20px;
+}
+
+.tipo-contrato label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.tipo-contrato select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    appearance: none; /* Remove estilos padrão do sistema */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 24 24" fill="%23333" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px;
+}
+@media (max-width: 500px) {
+.tipo-contrato select {
+    font-size: 0.9rem;
+}
+}
+
+.campos-personalizados {
+    margin-bottom: 20px;
+}
+
+.campos-personalizados label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.campos-personalizados input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para os botões */
+.botoes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botoes button {
+    background-color: #673ab7; /* Deep Purple-500 */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+@media (max-width: 500px) {
+.botoes button {
+    font-size: 0.9rem;
+}
+}
+.botoes button:hover {
+    background-color: #512da8; /* Deep Purple-700 */
+}
+
+.resultado {
+    margin-top: 20px;
+}
+
+.resultado h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resultado textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    min-height: 200px;
+    resize: vertical;
+}

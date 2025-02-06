@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média Ponderada</title>
+    <link rel="stylesheet" href="media-ponderada.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+ <header>
+ <nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+    <ul class="nav-menu">
+    <li><a href="../index.html">Home</a></li>
+   
+   </ul>
+   <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+   </div>
+  </div>
+ </nav>
+</header>
+    <h1>Calculadora de Média Ponderada</h1>
+
+    <div class="calculadora-container">
+        <div id="inputs">
+            <!-- Inputs dinâmicos serão adicionados aqui -->
+        </div>
+
+        <div class="botoes">
+            <button onclick="adicionarCampo()">Adicionar Matéria</button>
+            <button onclick="calcularMedia()">Calcular Média</button>
+        </div>
+
+        <div class="resultado">
+            <label for="media">Média Ponderada:</label>
+            <input type="text" id="media" readonly>
+        </div>
+    </div>
+
+    <script src="media-ponderada.js"></script>
+</body>
+</html>

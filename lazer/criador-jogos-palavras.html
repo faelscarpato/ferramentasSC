@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Jogos de Palavras</title>
+    <link rel="stylesheet" href="criador-jogos-palavras.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+ <nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+    <ul class="nav-menu">
+    <li><a href="../index.html">Home</a></li>
+   </ul>
+   <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+   </div>
+  </div>
+ </nav>
+
+        </header>
+        <div class="container">    
+        <h1>Criador de Jogos de Palavras</h1>
+        </div>
+    <main class="container">
+        <section id="configuracao">
+            <h2>Configuração do Jogo</h2>
+            <div class="form-group">
+                <label for="tipo-jogo">Tipo de Jogo:</label>
+                <select id="tipo-jogo">
+                    <option value="palavras-cruzadas">Palavras Cruzadas</option>
+                    <option value="anagramas">Anagramas</option>
+                    <option value="forca">Jogo da Forca</option>
+                    <option value="caca-palavras">Caça Palavras</option>
+                    <option value="criptograma">Criptograma</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lista-palavras">Lista de Palavras (separadas por vírgula):</label>
+                <textarea id="lista-palavras" placeholder="Ex: casa, carro, árvore"></textarea>
+            </div>
+
+            <button onclick="criarJogo()">Criar Jogo</button>
+        </section>
+
+        <section id="jogo" style="display: none;">
+            <h2>Jogo</h2>
+            <div id="area-jogo">
+                <!-- Conteúdo do jogo será inserido aqui -->
+            </div>
+            <button onclick="recomecarJogo()">Recomeçar</button>
+        </section>
+
+        <section id="instrucoes">
+            <h2>Instruções</h2>
+            <p>1. Selecione o tipo de jogo que você deseja criar.</p>
+            <p>2. Insira uma lista de palavras separadas por vírgula.</p>
+            <p>3. Clique em "Criar Jogo" para gerar o jogo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Criador de Jogos de Palavras</p>
+    </footer>
+
+    <script src="criador-jogos-palavras.js"></script>
+</body>
+</html>

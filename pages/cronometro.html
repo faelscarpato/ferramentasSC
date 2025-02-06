@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro e Temporizador</title>
+    <link rel="stylesheet" href="cronometro-temporizador.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav></header>
+       
+               
+    <h1>Cronômetro e Temporizador</h1>
+
+    <div class="cronometro-container">
+        <div class="timer">
+            <div id="display">00:00:00</div>
+            <div class="buttons">
+                <button id="startStop">Iniciar</button>
+                <button id="reset">Zerar</button>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="countdown">
+            <h2>Temporizador</h2>
+            <div class="input-area">
+                <input type="number" id="hours" placeholder="00" min="0" max="99"> :
+                <input type="number" id="minutes" placeholder="00" min="0" max="59"> :
+                <input type="number" id="seconds" placeholder="00" min="0" max="59">
+            </div>
+            <div class="buttons">
+                <button id="startCountdown">Iniciar</button>
+                <button id="resetCountdown">Zerar</button>
+            </div>
+            <div id="countdownDisplay">00:00:00</div>
+        </div>
+    </div>
+
+    <script src="cronometro-temporizador.js"></script>
+</body>
+</html>

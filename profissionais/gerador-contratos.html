@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Contratos Personalizados</title>
+    <link rel="stylesheet" href="gerador-contratos.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Gerador de Contratos Personalizados</h1>
+
+    <div class="gerador-container">
+        <div class="tipo-contrato">
+            <label for="tipo">Selecione o tipo de contrato:</label>
+            <select id="tipo">
+                <option value="compra-venda">Compra e Venda de Imóvel</option>
+                <option value="prestacao-servicos">Prestação de Serviços</option>
+                <option value="locacao">Locação de Imóvel</option>
+                <!-- Adicione outros tipos de contrato aqui -->
+            </select>
+        </div>
+
+        <div class="campos-personalizados" id="campos-personalizados">
+            <!-- Campos de entrada personalizados serão adicionados aqui via JavaScript -->
+        </div>
+
+        <div class="botoes">
+            <button onclick="gerarContrato()">Gerar Contrato</button>
+        </div>
+
+        <div class="contrato-gerado resultado">
+            <h2>Contrato Gerado:</h2>
+         
+        <div id="editor">
+            <p>Copie o contrato gerado aqui e edite!</p>
+        </div><br>
+        <div class="botoes">
+        <button onclick="salvarContrato()">Salvar Contrato</button></div>
+    </div>
+
+    <script src="gerador-contratos.js"></script>
+</body>
+</html>

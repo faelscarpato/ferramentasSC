@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador de Links</title>
+    <link rel="stylesheet" href="encurtador-links.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+        <h1>Encurtador de Links</h1>
+        <p>Encurte URLs longas para facilitar o compartilhamento!</p>
+    </header>
+
+    <main class="container">
+        <section id="entrada">
+          <div class="form-group">
+              <label for="url-original">URL Original:</label>
+              <input type="url" id="url-original" placeholder="Cole a URL longa aqui">
+          </div>
+            <button onclick="encurtarURL()">Encurtar URL</button>
+        </section>
+
+        <section id="resultado" style="display: none;">
+            <h2>URL Encurtada</h2>
+            <div id="url-encurtada">
+              <a href="#" id="link-encurtado" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <button onclick="copiarURL()">Copiar URL</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Encurtador de Links</p>
+    </footer>
+
+    <script src="encurtador-links.js"></script>
+</body>
+</html>

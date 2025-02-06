@@ -1,0 +1,86 @@
+/* bloco-notas.css */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bloco-notas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    margin-bottom: 20px;
+    gap: 10px; /*Espaçamento dos itens */
+    flex-wrap: wrap;  /* quebra os componentes para caber na tela */
+}
+
+/* Estilos para os botões */
+.toolbar button {
+    background-color: #64b5f6; /* Blue lighten-2 */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.toolbar button:hover {
+    background-color: #42a5f5; /* Blue lighten-1 */
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-height: 200px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilos para a lista de notas */
+.lista-notas h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lista-notas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-notas li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lista-notas li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Remove a borda inferior do último item da lista */
+.lista-notas li:last-child {
+    border-bottom: none;
+}

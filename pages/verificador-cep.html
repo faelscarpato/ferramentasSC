@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de CEP</title>
+    <link rel="stylesheet" href="verificador-cep.css">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+         <div class="container">
+            <a href="../index.html" class="logo"><img src="../logo.svg" alt="logo"></a>
+          <ul class="nav-menu">
+           <li><a href="../index.html">Home</a></li>
+          </ul>
+          <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+          </div>
+         </div>
+        </nav>
+       
+               </header>
+    <h1>Verificador de CEP</h1>
+
+    <div class="verificador-container">
+        <div class="input-area">
+            <label for="cep">Digite o CEP:</label>
+            <input type="text" id="cep" maxlength="9" placeholder="xxxxx-xxx">
+            <!-- maxlength para formatar -->
+            <button onclick="buscarCEP()">Buscar</button>
+        </div>
+
+        <div class="resultado-area">
+            <h2>Resultado da Busca</h2>
+            <div class="resultado-campos">
+                <p><strong>CEP:</strong> <span id="resultado-cep"></span></p>
+                <p><strong>Logradouro:</strong> <span id="resultado-logradouro"></span></p>
+                <p><strong>Complemento:</strong> <span id="resultado-complemento"></span></p>
+                <p><strong>Bairro:</strong> <span id="resultado-bairro"></span></p>
+                <p><strong>Localidade/UF:</strong> <span id="resultado-localidade"></span></p>
+                <p><strong>IBGE:</strong> <span id="resultado-ibge"></span></p>
+                <p><strong>DDD:</strong> <span id="resultado-ddd"></span></p>
+            </div>
+              <div id="mapa" class="mapa"></div>
+        </div>
+    </div>
+   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <script src="verificador-cep.js"></script>
+</body>
+</html>
